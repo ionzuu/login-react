@@ -1,13 +1,232 @@
-body {
+
+*{
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Roboto';
+  color: whitesmoke;
+}
+.container{
+  background-image: url('https://res.cloudinary.com/dx5becozb/image/upload/v1670885774/img/background_enakxr.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 62vw 100vh;
+  width: 100vw;
+  height: 100vh;
+}
+.rightcontainer{
+  width: 40vw;
+  height: 100vh;
+  background-color: #2B2C34;
+  box-shadow: -1px 0px 5px black;
+  position: fixed;
+  right: 0;
+  display: flex;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.logo1{
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 10px;
+}
+.logoempresa{
+  margin-top: 15px;
+  width: 200px;
+}
+.logo2{
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.logopraxia{
+  width: 120px;
+  padding-bottom: 20px;
+}
+.backgroundrightcontainer{
+  width: 100%;
+}
+.headerlogin{
+  height: 25%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.title{
+  font-size: 2rem;
+}
+.bodylogin{
+  height: 35%;
+  padding-top: 50px;
+  padding-left: 75px;
+}
+form{
+  width: 100%;
+  height: 100%;
+}
+.label{
+  display: block;
+  width: 100%;
+}
+.input{
+  width: 90%;
+  height: 30px;
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid whitesmoke;
+}
+.labelcontra{
+  padding-top: 10px;
+}
+.input:focus{
+  background: #23242b;
+}
+.footerlogin{
+  height: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+}
+.buttonposition{
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+.buttonsubmit{
+  height: 20px;
+}
+.buttonlogin{
+  width: 90%;
+  height: 35px;
+  background-color: black;
+  border-color: transparent;
+  border-radius: 10px;
+  font-size: 1.30rem;
+}
+.buttonlogin:hover{
+  background-color: white;
+  border-color: black;
+  color: black;
+}
+.buttonchange{
+  background-color: transparent;
+  border: none;
+}
+.buttonchange:hover{
+  text-decoration: underline;
+}
+/* -- RecoverApp -- */
+.formContainer{
+  width: 100%;
+  height: 100%;
+}
+.recoverheader{
+  height: 26%;
+  width: 100%;
+}
+.recoverpositionbutton{
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+.text_headerrecover{
+  width: 100%;
+  height: 84%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+.button_back{
+  background-color: transparent;
+  border: none;
+  margin-left: 40px;
+  font-size: 0.9rem;
+  display: flex;
+  left: 0;
+  position: absolute;
+  border-radius: 10px;
+  width: 2rem;
+  height: 2rem;
+}
+.button_back:hover{
+  background-color: #23242b;
+  cursor: pointer;
+}
+.formrecover{
+  width: auto;
+  height: auto;
+}
+.recoverbody{
+  padding-left: 40px;
+  padding-top: 30px;
+  height: 44%;
+}
+.recoverfooter{
+  padding-left: 40px;
+}
+.positionshowcontra{
+  padding-top: 25px;
+}
+.buttonrecover{
+  width: 90%;
+  height: 35px;
+  background-color: black;
+  border-color: transparent;
+  border-radius: 10px;
+}
+.buttonrecover:hover{
+  background-color: white;
+  border-color: black;
+  color: black;
+}
+.CheckBox{
+  margin-left: 5px;
+}
+.errors{
+  color: #FF1919;
+  text-shadow: 1px 1px 5px black;
+  font-weight: bold;
+}
+/* -----
+SVG Icons - svgicons.sparkk.fr
+----- */
+
+.svg-icon {
+  width: 2rem;
+  height: 2rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: whitesmoke;
+}
+
+.svg-icon circle {
+  stroke: whitesmoke;
+  stroke-width: 1;
+}
+.svg-icon path:hover,
+.svg-icon polygon:hover,
+.svg-icon rect:hover,
+.svg-icon circle:hover
+{
+  fill: white;
+  stroke: white;
+  cursor: pointer;
 }
